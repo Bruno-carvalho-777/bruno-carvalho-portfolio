@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Demo conceptual de landing page para açaí, heladería y postres fríos.">
+  <title>ROXO — Açaí & Ice Cream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo">Demo conceptual • modelo para açaí / heladería</div>
+
+  <nav class="nav">
+    <a class="brand" href="#">ROXO<span>®</span></a>
+    <div class="links"><a href="#menu">Menú</a><a href="#armalo">Arma el tuyo</a><a href="#momento">Momentos</a></div>
+    <a class="nav-order" data-magnetic href="#pedido">Pedir ahora ↗</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="kicker">Açaí · Helado · Fruta · CDE</div>
+        <h1>FRÍO.<br><em>CREMOSO.</em><br>INOLVIDABLE.</h1>
+        <p>Açaí intenso, helados cremosos y toppings que convierten cada vaso en algo que quieres fotografiar antes de probar.</p>
+        <div class="actions">
+          <a class="btn dark" data-magnetic href="#armalo">Armar mi açaí ↗</a>
+          <a class="btn ghost" href="#menu">Ver favoritos</a>
+        </div>
+        <div class="micro"><span>● Preparado al momento</span><span>● Combina como quieras</span></div>
+      </div>
+
+      <div class="hero-art reveal" data-tilt>
+        <div class="sun"></div>
+        <div class="orbital"><span>AÇAÍ</span><span>FRUTA</span><span>CREMA</span><span>CRUNCH</span></div>
+        <div class="bowl-photo"></div>
+        <div class="sticker sticker-one">100%<br>ANTOJO</div>
+        <div class="sticker sticker-two">HECHO<br>PARA TI</div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div>ÇAÍ &nbsp;•&nbsp; HELADO &nbsp;•&nbsp; FRUTILLA &nbsp;•&nbsp; BANANA &nbsp;•&nbsp; GRANOLA &nbsp;•&nbsp; CREMA &nbsp;•&nbsp; AÇAÍ &nbsp;•&nbsp; HELADO &nbsp;•&nbsp; FRUTILLA &nbsp;•&nbsp; BANANA &nbsp;•&nbsp; GRANOLA &nbsp;•&nbsp; CREMA &nbsp;•&nbsp;</div></div>
+
+    <section id="menu" class="section menu">
+      <div class="section-top reveal">
+        <div><span class="kicker">01 — Favoritos</span><h2>ELIGE TU<br>OBSESIÓN.</h2></div>
+        <p>No hace falta leer veinte opciones. Los favoritos entran por los ojos y llevan directo al pedido.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="product purple reveal">
+          <div class="product-photo acai"></div>
+          <div class="product-copy"><span>01</span><h3>Açaí Original</h3><p>Banana · frutilla · granola · leche en polvo</p><b>El clásico que nunca falla.</b></div>
+        </article>
+        <article class="product cream reveal">
+          <div class="product-photo gelato"></div>
+          <div class="product-copy"><span>02</span><h3>Gelato Mix</h3><p>Dos sabores · salsa · crunch</p><b>Cremoso, frío y totalmente tuyo.</b></div>
+        </article>
+        <article class="product lime reveal">
+          <div class="product-photo fruit"></div>
+          <div class="product-copy"><span>03</span><h3>Fresh Bowl</h3><p>Frutas · crema · granola</p><b>Fresco sin parecer aburrido.</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="armalo" class="builder reveal">
+      <div class="builder-copy">
+        <span class="kicker">02 — Interactivo</span>
+        <h2>ARMA EL TUYO.</h2>
+        <p>El cliente juega con la elección antes de pedir. Más visual, menos menú eterno.</p>
+      </div>
+
+      <div class="builder-ui" data-acai-builder>
+        <div class="builder-controls">
+          <div class="control-block">
+            <label>Base</label>
+            <div class="choice-row">
+              <button class="choice active" data-base="Açaí Original" data-tone="#3d0758">Açaí</button>
+              <button class="choice" data-base="Açaí + Banana" data-tone="#5a245d">Açaí + banana</button>
+              <button class="choice" data-base="Helado cremoso" data-tone="#caaee0">Helado</button>
+            </div>
+          </div>
+          <div class="control-block">
+            <label>Toppings <small>elige hasta 3</small></label>
+            <div class="topping-row">
+              <button class="topping active" data-topping="Frutilla">Frutilla</button>
+              <button class="topping active" data-topping="Banana">Banana</button>
+              <button class="topping" data-topping="Granola">Granola</button>
+              <button class="topping" data-topping="Paçoca">Paçoca</button>
+              <button class="topping" data-topping="Leche en polvo">Leche en polvo</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="preview">
+          <div class="preview-bowl" data-preview-bowl><div class="shine"></div></div>
+          <div class="preview-text">
+            <span>Tu combinación</span>
+            <strong data-build-title>Açaí Original</strong>
+            <p data-build-toppings>Frutilla + Banana</p>
+            <a class="btn lime-btn" data-magnetic data-demo-action="En el sitio real, este botón abriría WhatsApp con la combinación elegida." href="#">Pedir esta combinación ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="momento" class="section mood">
+      <div class="mood-grid">
+        <div class="mood-big reveal"><div><span class="kicker">03 — Marca</span><h2>NO SOLO SE COME.<br>SE COMPARTE.</h2></div></div>
+        <div class="mood-small one reveal"><span>DESPUÉS DEL GYM</span></div>
+        <div class="mood-small two reveal"><span>CON AMIGOS</span></div>
+        <div class="mood-quote reveal"><strong>Una web para que el producto se sienta irresistible antes de llegar al primer bocado.</strong></div>
+      </div>
+    </section>
+
+    <section id="pedido" class="final-cta reveal">
+      <div>
+        <span class="kicker">04 — Pedido</span>
+        <h2>¿SE TE ANTOJÓ?</h2>
+      </div>
+      <a class="btn dark" data-magnetic data-demo-action="En el sitio real, este botón abriría el WhatsApp del negocio o el sistema de pedidos." href="#">Pedir por WhatsApp ↗</a>
+    </section>
+  </main>
+
+  <footer>Demo visual para prospección comercial. Marca, productos y datos ficticios; el proyecto real sería personalizado para cada negocio.</footer>
+  <a class="float-order" href="#armalo" aria-label="Armar pedido">+</a>
+
+  <script src="../script.js"></script>
+  <script src="../enhance.js"></script>
+  <script src="acai.js"></script>
+</body>
+</html>
