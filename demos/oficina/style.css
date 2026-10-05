@@ -96,3 +96,5 @@ html,body{max-width:100%;overflow-x:hidden}img{max-width:100%;height:auto}.btn,.
   .float{width:54px;height:54px;right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom))}
   .demo-toast{width:calc(100vw - 28px);max-width:calc(100vw - 28px)}
 }
+
+@media (max-width:700px){.symptoms{display:grid!important;grid-template-columns:1fr!important;overflow:visible!important;width:100%!important;gap:8px!important}.symptom{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;white-space:normal!important;overflow-wrap:anywhere!important;text-align:left!important}.diagnostic-grid{grid-template-columns:1fr!important;width:100%!important;overflow:visible!important}.diagnostic{overflow:hidden!important}}
