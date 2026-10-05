@@ -52,3 +52,47 @@ html,body{max-width:100%;overflow-x:hidden}img{max-width:100%;height:auto}.btn,.
   .side-panel{padding:24px}
   .cta-panel h2{font-size:clamp(54px,16vw,80px)}
 }
+
+/* strict mobile refinement after visual audit */
+@media (max-width:600px){
+  html,body{width:100%;max-width:100%;overflow-x:clip}
+  body,main,.hero,.hero-copy,.hero-media,.section,.section-head,.service-grid,.diagnostic,.diagnostic-grid,.symptoms,.diagnostic-card,.split,.image-block,.side-panel,.faq,.cta-panel,.footer{min-width:0;max-width:100%}
+  .demo{font-size:9px;letter-spacing:.1em;padding:7px 10px;white-space:normal;line-height:1.25}
+  .nav{top:34px;padding:14px 16px;background:linear-gradient(180deg,rgba(11,13,15,.96),rgba(11,13,15,.72),transparent)}
+  .brand{font-size:24px}
+  .hero{min-height:auto;width:100%;padding:108px 16px 28px;gap:24px}
+  .hero-copy{padding:34px 0 8px;width:100%}
+  .hero-copy:after{font-size:82px;right:0;top:16px}
+  .eyebrow{font-size:10px;line-height:1.45;letter-spacing:.16em}
+  .hero h1{font-size:clamp(58px,16vw,72px);line-height:.82;letter-spacing:0;margin:14px 0 20px;max-width:100%;overflow-wrap:anywhere}
+  .hero p{font-size:16px;line-height:1.55;max-width:100%;margin-bottom:0}
+  .actions{display:grid;grid-template-columns:1fr;gap:10px;width:100%;margin-top:24px}
+  .actions .btn{width:100%;justify-content:center;padding:14px 16px}
+  .hero-copy>.eyebrow:last-child{margin-top:20px;white-space:normal;overflow-wrap:anywhere}
+  .hero-media{min-height:360px;width:100%;border-radius:8px}
+  .stamp{left:14px;right:14px;bottom:14px;max-width:none;padding:14px 16px}
+  .stamp strong{font-size:24px}
+  .ticker{padding:13px 0}.ticker-track{font-size:19px}
+  .section{width:100%;padding:64px 16px}
+  .section-head{display:block;margin-bottom:30px}.section-head>.eyebrow{margin-bottom:16px}
+  .section h2,.diagnostic-head h2{font-size:clamp(52px,14vw,68px);line-height:.86;overflow-wrap:anywhere}
+  .section-head p,.diagnostic-head p{font-size:15px;line-height:1.6}
+  .service{min-height:210px;padding:22px}
+  .service h3{font-size:40px;margin:38px 0 8px}.service p{font-size:14px;line-height:1.6}.service:after{right:20px;top:20px}
+  .diagnostic{padding-top:58px;padding-bottom:58px}
+  .diagnostic-head{margin-bottom:26px}
+  .diagnostic-grid{display:block;width:100%}
+  .symptoms{display:grid;grid-template-columns:1fr;gap:8px;overflow:visible;width:100%;padding:0 0 14px}
+  .symptom{width:100%;min-width:0;white-space:normal;padding:16px 44px 16px 16px;line-height:1.35}
+  .diagnostic-card{width:100%;min-height:280px;padding:22px}
+  .diagnostic-card strong{font-size:clamp(34px,10vw,44px);line-height:1}
+  .diagnostic-card .btn{width:100%;justify-content:center}
+  .split{display:block}.image-block{min-height:330px;margin-bottom:14px}.side-panel{padding:22px}.side-panel h3{font-size:50px}.side-panel li{gap:14px;align-items:flex-start}
+  .faq-q{padding:17px 16px;font-size:14px}.faq-a div{padding:0 16px 17px;font-size:14px}
+  .cta-panel{display:block;width:calc(100% - 24px);max-width:calc(100% - 24px);margin:0 12px 72px;padding:28px 18px;box-shadow:6px 6px 0 #24292e}
+  .cta-panel h2{font-size:clamp(50px,14vw,66px);line-height:.84}
+  .cta-panel .btn{width:100%;justify-content:center;margin-top:24px}
+  .footer{padding:0 16px 90px;line-height:1.5}
+  .float{width:54px;height:54px;right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom))}
+  .demo-toast{width:calc(100vw - 28px);max-width:calc(100vw - 28px)}
+}
