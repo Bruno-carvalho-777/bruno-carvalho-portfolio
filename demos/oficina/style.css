@@ -28,3 +28,27 @@ linear-gradient(145deg,rgba(255,176,0,.12),transparent 45%),
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.ticker-track{animation:none!important}}
 
 .hero-copy{position:relative}.hero-copy:after{content:"01";position:absolute;right:2%;top:6%;font-family:'Bebas Neue';font-size:180px;line-height:1;color:rgba(255,255,255,.025);pointer-events:none}.stamp{box-shadow:8px 8px 0 rgba(255,176,0,.22)}.service{overflow:hidden}.service:before{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:.3s}.service:hover:before{transform:scaleX(1)}.diagnostic-card{box-shadow:inset 0 0 0 1px rgba(255,176,0,.06),0 30px 70px rgba(0,0,0,.22)}.side-panel{border:1px solid #2c3338}.cta-panel{box-shadow:10px 10px 0 #24292e}.float{transition:.25s}.float:hover{transform:rotate(18deg) scale(1.05)}@media(max-width:900px){.hero-copy:after{font-size:110px;top:0}.stamp{box-shadow:5px 5px 0 rgba(255,176,0,.22)}}
+
+/* responsive hardening */
+html,body{max-width:100%;overflow-x:hidden}img{max-width:100%;height:auto}.btn,.symptom,.faq-q,.float{min-height:44px;touch-action:manipulation}
+@media (min-width:901px) and (max-width:1180px){
+  .hero{grid-template-columns:1fr 1fr;gap:28px;padding-left:3vw;padding-right:3vw}
+  .hero h1{font-size:clamp(70px,8vw,110px)}
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .diagnostic-grid{grid-template-columns:.85fr 1.15fr}
+}
+@media (max-width:900px){
+  .nav{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+  .section,.hero,.cta-panel{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+  .symptoms{overflow-x:auto;display:flex;-webkit-overflow-scrolling:touch;padding-bottom:5px}.symptom{white-space:nowrap;min-width:max-content}
+  .ticker-track{font-size:22px}
+  .float{right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom))}
+}
+@media (max-width:560px){
+  .hero h1{font-size:clamp(64px,18vw,92px)}
+  .actions{display:grid}.actions .btn{width:100%}
+  .service-grid{grid-template-columns:1fr}
+  .diagnostic-card{padding:22px}
+  .side-panel{padding:24px}
+  .cta-panel h2{font-size:clamp(54px,16vw,80px)}
+}
